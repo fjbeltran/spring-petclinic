@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: formacion
+Build-Jdk: 11.0.1
+Implementation-Title: petclinic
+Implementation-Version: 1.4.2
+Implementation-Vendor-Id: org.springframework.samples
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/spring-petclin
+ ic/
+Created-By: Maven Integration for Eclipse
+
