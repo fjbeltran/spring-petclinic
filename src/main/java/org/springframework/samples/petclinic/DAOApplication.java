@@ -34,6 +34,7 @@ import org.springframework.samples.petclinic.persistence.dao.IBillAO;
 import org.springframework.samples.petclinic.persistence.dao.IOwnerDAO;
 import org.springframework.samples.petclinic.persistence.dao.IPetDAO;
 import org.springframework.samples.petclinic.persistence.dao.IVisitDAO;
+import org.springframework.samples.petclinic.visit.Visit;
 
 /**
  * PetClinic Spring Boot Application.
@@ -137,6 +138,17 @@ public class DAOApplication implements CommandLineRunner {
 		System.out.println("Bills totales recuperadas");
 		for(Bill billAux:Allbills) {
 			System.out.println("Bill recuperada con PK " + billAux.getId() + " IdNumber "  + billAux.getIdNumber() +  " y money " + billAux.getMoney() );
+		}
+		
+		List<Visit> Allvisits = visitDAO.findAll();
+		System.out.println("Visitas de la mascota con id 8: ");
+		for(Visit v : Allvisits) {
+			if(v.getPetId()==8) {
+				
+				System.out.println("Visita id: "+v.getId());	
+			
+				
+			}
 		}
 
 
